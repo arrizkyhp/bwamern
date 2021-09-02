@@ -16,6 +16,7 @@
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
+  min-height: 50px;
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
@@ -53,7 +54,6 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-
 //
 // Alternate buttons
 //
@@ -69,7 +69,6 @@ fieldset:disabled a.btn {
     @include button-outline-variant($value);
   }
 }
-
 
 //
 // Link buttons
@@ -101,7 +100,6 @@ fieldset:disabled a.btn {
   // No need for an active state here
 }
 
-
 //
 // Button Sizes
 //
@@ -113,7 +111,6 @@ fieldset:disabled a.btn {
 .btn-sm {
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
 }
-
 
 //
 // Block button
@@ -136,4 +133,10 @@ input[type="button"] {
   &.btn-block {
     width: 100%;
   }
+}
+
+// has Shadow
+
+.btn-shadow {
+  box-shadow: 0px 4px 15px rgba($primary, 0.5);
 }
