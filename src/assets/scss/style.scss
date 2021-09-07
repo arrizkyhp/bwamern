@@ -98,7 +98,17 @@ section {
 }
 
 .card {
-  height: 100%;
+  border-radius: 15px;
+
+  &.bordered {
+    border: 1px solid $gray-300;
+
+    h4 {
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+  }
 
   .tag {
     position: absolute;
@@ -266,5 +276,15 @@ Footer {
     margin-bottom: 50px;
     font-weight: 300;
     color: $gray-600;
+  }
+}
+
+main {
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    font-weight: 400;
+    color: $gray-500;
   }
 }
