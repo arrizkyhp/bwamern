@@ -130,7 +130,7 @@ export default class Checkout extends Component {
                             <Controller>
                                 {data.proofPayment !== "" &&
                                 data.bankName !== "" &&
-                                data.bankName !== "" && (
+                                data.bankHolder !== "" && (
                                     <Fade>
                                         <Button
                                             className="btn mb-3"
